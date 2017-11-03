@@ -11,6 +11,8 @@ import {ArticleListService} from './article/article-list.service';
 import {ArticleDetailService} from './article/article-detail.service';
 import {DonateComponent} from './donate/donate.component';
 import {DonateService} from './donate/donate.service';
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {MatToolbarModule} from "@angular/material";
 
 
 @NgModule({
@@ -24,6 +26,8 @@ import {DonateService} from './donate/donate.service';
   imports: [
     RoutingModule,
     BrowserModule,
+    BrowserAnimationsModule,
+    MatToolbarModule
   ],
   providers: [AboutService, ArticleListService, ArticleDetailService, DonateService],
   bootstrap: [AppComponent]
